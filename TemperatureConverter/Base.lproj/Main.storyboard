@@ -48,6 +48,12 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemOrangeColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Conversion(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-Ad-ia3">
+                                <rect key="frame" x="143.66666666666666" y="109" width="103" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -55,15 +61,18 @@
                             <constraint firstItem="p1m-St-NmC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fs-Vg-BBZ"/>
                             <constraint firstItem="p1m-St-NmC" firstAttribute="top" secondItem="RSO-R4-vRV" secondAttribute="bottom" constant="80" id="5Sb-Mb-boh"/>
                             <constraint firstItem="MkG-vm-6NK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="83T-W0-oxF"/>
+                            <constraint firstItem="fUr-Ad-ia3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Agp-qe-A9Y"/>
                             <constraint firstItem="MkG-vm-6NK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gsp-BM-vum"/>
                             <constraint firstItem="RSO-R4-vRV" firstAttribute="top" secondItem="MkG-vm-6NK" secondAttribute="bottom" constant="20" id="Qyr-CH-sge"/>
                             <constraint firstItem="Apx-em-5uU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WBN-5G-Jow"/>
                             <constraint firstItem="Apx-em-5uU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jB0-8s-BLk"/>
                             <constraint firstItem="RSO-R4-vRV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfd-Ff-0Q7"/>
+                            <constraint firstItem="fUr-Ad-ia3" firstAttribute="top" secondItem="Apx-em-5uU" secondAttribute="bottom" constant="20" id="neq-8n-bkW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MkG-vm-6NK" secondAttribute="trailing" constant="20" id="taP-Wr-MP7"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelCountConversions" destination="fUr-Ad-ia3" id="RFq-bT-KFG"/>
                         <outlet property="labelResult" destination="p1m-St-NmC" id="aI5-sM-fL0"/>
                         <outlet property="txtTemperature" destination="MkG-vm-6NK" id="3Df-yR-o5L"/>
                     </connections>
@@ -74,6 +83,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
